@@ -1,0 +1,124 @@
+‏<!DOCTYPE html>
+‏<html lang="ar" dir="rtl">
+‏<head>
+‏    <meta charset="UTF-8">
+‏    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‏    <title>برنامجي - My Schedule</title>
+‏    <style>
+‏        * {
+‏            margin: 0;
+‏            padding: 0;
+‏            box-sizing: border-box;
+‏        }
+‏
+‏        body {
+‏            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+‏            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+‏            min-height: 100vh;
+‏            padding: 20px;
+‏        }
+‏
+‏        .container {
+‏            max-width: 900px;
+‏            margin: 0 auto;
+‏        }
+‏
+‏        .header {
+‏            text-align: center;
+‏            color: white;
+‏            margin-bottom: 30px;
+‏            padding: 20px;
+‏        }
+‏
+‏        .header h1 {
+‏            font-size: 2.5em;
+‏            margin-bottom: 10px;
+‏        }
+‏
+‏        .language-toggle {
+‏            position: absolute;
+‏            top: 20px;
+‏            right: 20px;
+‏            background: white;
+‏            border: none;
+‏            padding: 10px 20px;
+‏            border-radius: 25px;
+‏            cursor: pointer;
+‏            font-weight: bold;
+‏            color: #667eea;
+‏        }
+‏
+‏        .main-card {
+‏            background: white;
+‏            border-radius: 20px;
+‏            padding: 30px;
+‏            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+‏            margin-bottom: 20px;
+‏        }
+‏
+‏        .section-title {
+‏            color: #667eea;
+‏            margin-bottom: 20px;
+‏            font-size: 1.5em;
+‏            display: flex;
+‏            align-items: center;
+‏            gap: 10px;
+‏        }
+‏
+‏        .icon {
+‏            font-size: 1.5em;
+‏        }
+‏
+‏        .age-selector {
+‏            display: grid;
+‏            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+‏            gap: 15px;
+‏            margin-bottom: 20px;
+‏        }
+‏
+‏        .age-btn {
+‏            padding: 15px;
+‏            border: 2px solid #ddd;
+‏            background: white;
+‏            border-radius: 10px;
+‏            cursor: pointer;
+‏            font-weight: bold;
+‏            transition: all 0.3s;
+‏            text-align: center;
+‏        }
+‏
+‏        .age-btn:hover {
+‏            border-color: #667eea;
+‏            background: #f0f4ff;
+‏        }
+‏
+‏        .age-btn.active {
+‏            background: #667eea;
+‏            color: white;
+‏            border-color: #667eea;
+‏        }
+‏
+‏        .task-input-section {
+‏            display: grid;
+‏            grid-template-columns: 1fr 1fr;
+‏            gap: 15px;
+‏            margin-bottom: 20px;
+‏        }
+‏
+‏        .input-group {
+‏            display: flex;
+‏            flex-direction: column;
+‏        }
+‏
+‏        .input-group label {
+‏            color: #333;
+‏            margin-bottom: 8px;
+‏            font-weight: 600;
+‏        }
+‏
+‏        .input-group input,
+‏        .input-group select {
+‏            padding: 12px;
+‏            border: 2px solid #ddd;
+‏            bo
+‏
